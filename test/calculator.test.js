@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
-import { add, subtract, multiply, divide, toNumber } from '../calculator.js';
+import { add, subtract, multiply, divide, dividezero, toNumber } from '../calculator.js';
 
 const test = QUnit.test;
 
@@ -62,5 +62,15 @@ test('toNumber', (expect) => {
     const actual = toNumber(input);
 
     expect.equal(actual, expected);
+
+});
+
+test('dividezero', (expect) => {
+    const x = 0;
+    const y = 0;
+    const expected = NaN;
+
+    const actual = dividezero(x, y);
+    expect.equal(actual, expected); 
 
 });

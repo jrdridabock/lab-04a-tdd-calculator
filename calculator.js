@@ -18,3 +18,9 @@ export function divide(x, y) {
 export function toNumber(niceDay) { 
     return Number(niceDay.value);
 }
+
+export function dividezero(x, y) {
+    if (x === 0 & y === 0) {
+        return 0;
+    }
+}

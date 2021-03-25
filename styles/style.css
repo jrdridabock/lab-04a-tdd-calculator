@@ -22,6 +22,25 @@ body {
     background-color: var(--color2);
 }
 
+h1 {
+    display: flex;
+    width: fit-content;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: dotted 2px black;
+    font-size: 30px;
+    
+}
+
+button {
+    background-color: cadetblue;
+    border-radius: 13px;
+}
+
+input {
+    background-color: coral;
+    border-radius: 10px;
+}
+
 main {
     display: flex;
     flex-direction: column;

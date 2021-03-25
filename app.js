@@ -1,14 +1,37 @@
 // import functions and grab DOM elements
 import { add, subtract, divide, toNumber, multiply } from './calculator.js';
 
+
+//stretch 1 (didn't understand)
+
+// function init(input1Id, input2Id, buttonId, resultId) {
+//     const numberInputOne = document.getElementById(input1Id);
+//     const numberInputTwo = document.getElementById(input2Id);
+//     const addResult = document.getElementById(resultId);
+//     const addButton = document.getElementById(buttonId); 
+
+//     addButton.addEventListener('click', () => 
+//     { const x = toNumber(numberInputOne);
+//         const y = toNumber(numberInputTwo);
+//         addResult.textContent = add(x, y);
+ 
+//     });
+
+// }
+       
+
+// add elements
+// add listener
+// init('add-input-1', 'add-input-2', 'add-result', 'add-button', add);
 const numberInputOne = document.getElementById('add-input-1');
 const numberInputTwo = document.getElementById('add-input-2');
 const addResult = document.getElementById('add-result');
 const addButton = document.getElementById('add-button'); 
 
 addButton.addEventListener('click', () => {
-    
-    addResult.textContent = add(toNumber(numberInputOne), toNumber(numberInputTwo));
+    const x = toNumber(numberInputOne);
+    const y = toNumber(numberInputTwo);
+    addResult.textContent = add(x, y);
 });
 
 // subtract elements
@@ -36,7 +59,7 @@ const multResult = document.getElementById('mult-result');
 multButton.addEventListener('click', () => {
     
     multResult.textContent = multiply(toNumber(multInputOne), toNumber(multInputTwo));
-    
+
 });
 
 
